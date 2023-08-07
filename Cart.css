@@ -1,0 +1,306 @@
+body{
+    user-zoom: none;
+    user-select: none;
+}
+
+
+header{
+    display: flex;
+    position: fixed;
+    box-shadow: 0px -4px 20px rgb(29, 29, 29);
+    background-color: rgb(240, 240, 240);
+    padding-right: 100%;
+    padding-top: 4px;
+    margin-left: -0.6%;
+    margin-right: -0.6%;
+    margin-top: -0.6%;
+}
+
+#headerDiv img{
+    border-radius: 50%;
+}
+
+.headerAccountIcon{
+    margin-top: 20%;
+    margin-left: 100%;
+    user-select: none;
+}
+#headerDiv h1{
+    margin-left: 14%;
+    margin-right: -49%;
+    user-select: none;
+}
+
+.headerSearchBox input{
+    margin-top: 13.5%;
+    margin-left: 298%;
+    border-radius: 20px;
+    border: 1px solid rgb(124, 124, 124);
+    background-color: rgb(248, 247, 247);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.headerSearchIcon{
+    margin-left: 710%;
+    user-select: none;
+}
+
+.headerMenuIcon{
+    margin-top: 20%;
+    margin-left: 1750%;
+    transition: 0.4s;
+}
+.headerMenuIcon:hover{
+    transform: rotate(90deg);
+    transition: 0.4s;
+}
+
+
+
+.ddMenu{
+    text-align: justify;
+    position: fixed;
+    background-color: #d1d1d1;
+    color: rgb(31, 31, 31);
+    margin-left: 78.6%;
+    margin-top: -83.8%;
+    min-height: 45%;
+    max-height: 45%;
+    min-width: 18%;
+    max-width: 18%;
+    padding: 10px;
+    border-radius: 10px;
+    border: #535353 2px solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    overflow-x: hidden;
+    opacity: 100%;
+    scale: 0;
+    transition: 0.4s;
+    user-select: none;
+}
+#ddMenu h4{
+    font-size: 15px;
+    margin-bottom: -10%;
+    margin-top: 17%;
+    margin-left: 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#ddMenu a{
+    text-decoration: none;
+    color: #2c2c2c;
+}
+#ddMenu h4 img{
+    margin-bottom: -2.1%;
+}
+#ddMenu h5{
+    text-align: center;
+    margin-bottom: -15%;
+    margin-top: 32%;
+}
+#ddMenu.openPopup{
+    transition: 0.4s;
+    scale: 1;
+}
+.ddLine{
+    margin-top: 20%;
+    margin-bottom: -10%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+.top{
+    margin-bottom: 7%;
+}
+
+.productsInCart{
+    background-color: rgb(236, 236, 236);
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 8.5%;
+    margin-right: 51%;
+    display: flex;
+    margin-bottom: 1%;
+}
+.cartPI{
+    margin-right: 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cartPI img{
+    border-radius: 6px;
+}
+.cartPD{
+    margin-left: 30px;
+}
+.cartPD h1,h4,p{
+    margin-bottom: -10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cartPD h1{
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cartPD h4{
+    color: #464646;
+}
+.cartPD p{
+    color: rgb(73, 73, 73);
+}
+
+
+.listDetails{
+    position: fixed;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: -80%;
+    margin-left: 60%;
+    width: 10%;
+    height: 10%;
+    padding: 10%;
+    opacity: 10%;
+    transition: 0.4s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.listDetails.openListDetails{
+    opacity: 100%;
+    transition: 0.4s;
+}
+.listedGroceries{
+    width: 250%;
+    margin-left: -75%;
+    margin-top: -95%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.listedGroceries p{
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hrLine{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    margin-bottom: 0%;
+}
+
+
+/* Order */
+.order{
+    position: fixed;
+    background-color: #000000;
+    color: rgb(31, 31, 31);
+    margin-left: 56%;
+    margin-top: -81.6%;
+    min-height: 56.7%;
+    max-height: 58.7%;
+    min-width: 30.1%;
+    max-width: 30.1%;
+    padding: 10px;
+    padding-left: 6%;
+    border-radius: 10px;
+    border: #7a7a7a 2px solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    overflow: hidden;
+    opacity: 100%;
+    scale: 1;
+    transition: 0.4s;
+    user-select: none;
+}
+.order:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.order label{
+    color: #535353;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.order input{
+    background-color: #131313;
+    border: 1px solid rgb(252, 216, 17);
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px rgb(49, 49, 49);
+    color: rgb(255, 235, 123);
+}
+.order textarea{
+    background-color: #131313;
+    border: 1px solid rgb(252, 216, 17);
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px rgb(49, 49, 49);
+    color: rgb(255, 235, 123);
+}
+
+.paymentSetup{
+    display: flex;
+    margin-top: -7%;
+    margin-bottom: -3%;
+}
+.paymentSetup label{
+    margin-top: 4%;
+    margin-left: 7%;
+    color: rgb(255, 232, 102);
+}
+.paymentSetup input{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: rgb(255, 235, 123);
+}
+
+/* Order Button */
+.order button{
+    font-weight: bold;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    margin-top: -16%;
+    background-color: rgb(252, 216, 17);
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.order button:hover{
+    transition: 0.3s;
+    border: 1px solid rgb(73, 73, 73);
+    box-shadow: 0px 0px 8px rgb(59, 59, 59);
+}
+
+
+/* Title Of Order */
+.order h2{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    color: rgb(252, 216, 17);
+}
+
+
+
+footer{
+    display: flex;
+    position: fixed;
+    box-shadow: 0px 4px 20px rgb(29, 29, 29);
+    background-color: rgb(240, 240, 240);
+    padding-right: 16%;
+    padding-left: 2%;
+    padding-top: 4px;
+    border-radius: 15px;
+    scale: 0.85;
+}
+#footerDiv a{
+    margin-inline: 10%;
+    transition: 0.2s;
+}
+#footerDiv a:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#footerDiv{
+    margin-left: 32.05%;
+    margin-top: -50%;
+    position: fixed;
+}

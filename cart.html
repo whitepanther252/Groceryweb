@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the Site -->
+    <title>Cart | List</title>
+
+    <!-- Cart & List CSS -->
+    <link rel="stylesheet" type="text/css" href="Cart.css" />
+    <link rel="stylesheet" type="text/css" href="List.css" />
+
+    <!-- Meta Details -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Websites Designing" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="@Team D" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+  </head>
+
+  <body>
+    <header id="headerDiv">
+      <a href="#">
+        <img
+          class="headerAccountIcon"
+          src="logos/Bca.png"
+          width="55px"
+          height="55px"
+        />
+      </a>
+      <h1>Grocery List</h1>
+
+      <div class="headerSearchBox">
+        <input type="text" name="Search" id="Search" placeholder="Search ..." />
+      </div>
+
+      <a href="#">
+        <img
+          class="headerSearchIcon"
+          src="logos/Search Before.png"
+          width="75px"
+          height="75px"
+        />
+      </a>
+      <a href="#">
+        <img
+          class="headerMenuIcon"
+          src="logos/menu.png"
+          width="55px"
+          height="55px"
+          onclick="openPopup()"
+        />
+      </a>
+    </header>
+
+    <div class="cartAndList">
+      <cart>
+        <hr class="top" />
+
+        <div class="cartList">
+          <div class="productsInCart">
+            <span class="cartPI">
+              <img
+                src="list of products/download (4).jpeg"
+                width="180px"
+                height="180px"
+              />
+            </span>
+
+            <span class="cartPD">
+              <h1>Butter ( Smile )</h1>
+              <h4>
+                Butter is a dairy product made from the <br />
+                fat and protein components of churned cream.
+              </h4>
+              <p>Price : 300rs</p>
+            </span>
+          </div>
+
+          <div class="productsInCart">
+            <span class="cartPI">
+              <img
+                src="list of products/download (2).jpeg"
+                width="180px"
+                height="180px"
+              />
+            </span>
+
+            <span class="cartPD">
+              <h1>Orange Fruit</h1>
+              <h4>
+                An orange is a fruit of various citrus <br />
+                species in the family Rutaceae ; it <br />
+                primarily refers to Citrus × sinensis, <br />
+                which is also called sweet orange, ..
+              </h4>
+              <p>Price : 1000rs</p>
+            </span>
+          </div>
+
+          <div class="productsInCart">
+            <span class="cartPI">
+              <img
+                src="list of products/images (11).jpeg"
+                width="180px"
+                height="180px"
+              />
+            </span>
+
+            <span class="cartPD">
+              <h1>Quaker Oats</h1>
+              <h4>
+                Oats are among the healthiest grains <br />
+                on earth. They're a gluten-free whole <br />
+                grain and a great source of important <br />
+                vitamins, minerals, fiber, and antioxidants.
+              </h4>
+              <p>Price : 700rs</p>
+            </span>
+          </div>
+
+          <div class="productsInCart">
+            <span class="cartPI">
+              <img
+                src="list of products/images (3).jpeg"
+                width="180px"
+                height="180px"
+              />
+            </span>
+
+            <span class="cartPD">
+              <h1>Aashirvaad Atta</h1>
+              <h4>
+                Convenience and authentic taste now has<br />
+                a new name with the AASHIRVAAD Instant <br />
+                Mix range. This range includes Gulab <br />
+                Jamun, Rava Idli, Rice Idli and Rice Dosa.
+              </h4>
+              <p>Price : 150rs</p>
+            </span>
+          </div>
+
+          <div class="productsInCart">
+            <span class="cartPI">
+              <img
+                src="list of products/images (8).jpeg"
+                width="180px"
+                height="180px"
+              />
+            </span>
+
+            <span class="cartPD">
+              <h1>PayDay Peanut</h1>
+              <h4>
+                Pintola All Natural Peanut Butter <br />
+                (Crunchy) | Unsweetened | 30g Protein |<br />
+                Non GMO | Gluten Free | Vegan | <br />
+                Cholesterol Free (1kg) ·
+              </h4>
+              <p>Price : 500rs</p>
+            </span>
+          </div>
+        </div>
+
+        <hr class="hrLine" />
+      </cart>
+    </div>
+
+    <!-- Login -->
+    <Order class="order">
+      <!-- Title -->
+      <h2>Place Your Order</h2>
+
+      <!-- Input Getting -->
+      <form>
+        <label for="Name">Your Name </label>
+        <input
+          type="text"
+          name="Name"
+          id="Name"
+          placeholder="Enter Your Name"
+        /><br /><br />
+        <label for="Email">E-Mail </label>
+        <input
+          type="text"
+          name="Email"
+          id="Email"
+          placeholder="Enter Your E-Mail"
+        /><br /><br />
+        <textarea
+          rows="4"
+          cols="45"
+          type="text"
+          name="Address"
+          id="Address"
+          placeholder="Enter Your Location"
+        ></textarea>
+        <br /><br />
+        <label for="Payment">Payment Methods :</label><br />
+        <span class="paymentSetup">
+          <label for="Upi"><h5>UPI</h5></label>
+          <input type="radio" name="Payment" id="Upi" />
+          <label for="Cod"><h5>COD</h5></label>
+          <input type="radio" name="Payment" id="Cod" />
+        </span>
+      </form>
+
+      <!-- Place Button -->
+      <button>Place Your Orders</button>
+    </Order>
+
+    <dropdownmenu>
+      <div class="ddMenu" id="ddMenu">
+        <h4><a href="#">My Orders</a></h4>
+        <h4><a href="cart.html">My Cart</a></h4>
+        <h4><a href="#">My Wishlist</a></h4>
+        <h4>
+          <a href="#">Logout</a
+          ><img src="logos/log.png" width="15px" height="18px" />
+        </h4>
+
+        <hr class="ddLine" />
+
+        <h5>Copyright©2023</h5>
+
+        <hr class="ddLine" />
+      </div>
+    </dropdownmenu>
+
+    <script>
+      let ddMenu = document.getElementById("ddMenu");
+
+      function openPopup() {
+        ddMenu.classList.toggle("openPopup");
+      }
+    </script>
+
+    <footer id="footerDiv">
+      <a href="index.html" id="homeBefore">
+        <img src="logos/Home Before.png" width="60px" height="60px" />
+      </a>
+      <a href="category.html">
+        <img src="logos/Category Before.png" width="60px" height="60px" />
+      </a>
+      <a href="cart.html">
+        <img src="logos/Cart Before.png" width="60px" height="60px" />
+      </a>
+      <a href="profile.html">
+        <img src="logos/Profile Before.png" width="60px" height="60px" />
+      </a>
+    </footer>
+  </body>
+</html>
