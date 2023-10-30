@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="vis.css">
+    </head>
+    <body>
+
+        <div class="RC">
+            <h1><b>Quality Products. Affordable Prices.</b></h1>
+                <h2>Amazing finds in every visit.</h2>
+                   <h3>All your needs we have it here!</h3>
+        </div>
+
+    <Login class="login Top" id="PopUpLogin">
+
+                <!-- Title -->
+            <h2>LOGIN</h2>
+        
+            <!-- Input Getting -->
+        <form>
+            <label for="UserId">USERNAME </label>
+                <input type="textbox" name="UserId" id="UserId" placeholder="Enter phone or mail"><br/><br/>
+            <label for="Password">PASSWORD </label>
+                <input type="textbox" name="Password" id="Password" placeholder="Enter password"><br/><br/>
+
+            <!-- OR Text -->
+                <div class="or">OR</div>
+
+            <!-- Social Link To Login -->
+        <div class="socialLogin">
+            <img onclick="popUpSocialSignUpApple()" src="Attachments/Apple Logo .png" width="20px" height="20px">
+            <img onclick="popUpSocialSignUpGoogle()" src="Attachments/Google Logo .png" width="20px" height="20px">
+            <img onclick="popUpSocialSignUpFaceBook()" src="Attachments/Facebook Logo .png" width="20px" height="20px">
+        </div>
+
+            <!-- User Agrement -->
+        <span class="userAgrement">
+            <input type="checkbox" name="UserAgrement" id="UserAgrement">
+                <label for="UserAgrement">User Agrement Policy</label>
+        </span>
+        </form>
+
+    <span>    
+        <!-- Login Button -->
+        <a href="Groceryweb/index.html"><button>LOGIN</button></a>
+                                    
+    </span>
+
+        <!-- Login Page To SignUp page & Reset Password Page -->
+            <span class="label">
+                <a id="createAccount" onclick="dropDownSignUp()">Create Account</a> <p> / </p> <a onclick="dropDownResetPass()" id="resetPassword">Reset Password</a>
+            </span>
+
+        </Login>
+        
+            <!-- Script for dropDownLogin -->
+
+            <script>
+
+                let PopUpLogin = document.getElementById("PopUpLogin");
+    
+                function dropDownLogin(){
+                    PopUpLogin.classList.toggle("openLogin");
+                }
+
+            </script>
+
+        <!-- Reset Password -->
+    <Reset class="resetPass Top3" id="PopUpResetPass">
+
+        <!-- Close Button -->
+            <img onclick="dropDownResetPass()" id="xButtonResetPass" src="Attachments/Close.jpg" width="20px" height="20px">
+
+            <!-- Title -->
+        <h2>RESET YOUR</h2>
+        <h4>PASSWORD</h4>
+    
+    <!-- Content Of Reset Password -->
+        <p>
+            The current password for an account on a website, service, or device, and then creating a new one.
+        </p>
+
+        <!-- Input Getting -->
+    <form>
+            <input type="textbox" name="VerificationCode" id="VerificationCode" placeholder="Enter 6 Digit Code">
+    </form>
+
+    <!-- Verification Code Get Content -->
+        <p id="Varify">Get Varification Code</p> <p id="TimeForVarificationCode">1:00</p>
+
+<span>
+    <!-- Reset Button -->
+    <a href="Groceryweb/index.html"><button onclick="ResetAction()">SUBMIT</button></a>
+
+</span>
+
+</Reset>
+    
+        <!-- Script for dropDownRestPassword -->
+
+            <script>
+
+                let PopUpResetPass = document.getElementById("PopUpResetPass");
+    
+                function dropDownResetPass(){
+                    PopUpResetPass.classList.toggle("openResetPass");
+                }
+
+            </script>
+
+
+<!-- SignUp -->
+    <signup class="signUp Top2" id="PopUpSignUp">
+
+        <!-- Close Button -->
+            <img onclick="dropDownSignUp()" id="xButtonSignUp" src="Attachments/Close.jpg" width="20px" height="20px">
+
+            <!-- Title -->
+        <h2>CREATE ACCOUNT</h2>
+    
+        <!-- Input Getting -->
+    <form>
+        <label for="UserId">USERNAME </label>
+            <input type="textbox" name="UserId" id="UserId" placeholder="Enter phone or mail"><br/><br/>
+        <label for="Password">PASSWORD </label>
+            <input type="textbox" name="Password" id="Password" placeholder="Least 8 Charecters"><br/><br/>
+        <label for="Password">CONFIRM PASS </label>
+            <input type="textbox" name="CPassword" id="CPassword" placeholder="Re-enter password"><br/><br/>
+    </form>
+    
+            <!-- OR Text -->
+        <div class="or">OR</div>
+    
+        <!-- Social Link To SignUp -->
+    <div class="socialSignUp">
+        <img onclick="popUpSocialSignUpApple()" src="Attachments/Apple Logo .png" width="25px" height="25px">
+        <img onclick="popUpSocialSignUpGoogle()" src="Attachments/Google Logo .png" width="25px" height="25px">
+        <img onclick="popUpSocialSignUpFaceBook()" src="Attachments/Facebook Logo .png" width="25px" height="25px">
+    </div>
+
+<span>
+    <!-- SignUp Button -->
+        <a href="Groceryweb/index.html"><button onclick="SignUpAction()">SIGN UP</button></a>
+                                
+</span>
+
+    <!-- SignUp Page To Login page -->
+        <span>
+            <a onclick="dropDownSignUp()" id="loginAccount">Already Have Account ?</a>
+        </span>
+
+    </signup>
+    
+        <!-- Script for dropDownSignUp -->
+
+            <script>
+
+                let PopUpSignUp = document.getElementById("PopUpSignUp");
+    
+                function dropDownSignUp(){
+                    PopUpSignUp.classList.toggle("openSignUp");
+                }
+
+            </script>
+
+  </div>
+
+    </body>
+</html>
