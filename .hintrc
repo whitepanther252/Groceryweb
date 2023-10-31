@@ -8,6 +8,36 @@
       {
         "image-alt": "off"
       }
+    ],
+    "meta-viewport": "off",
+    "compat-api/css": [
+      "off",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter",
+          "backdrop-filter"
+        ]
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 116",
+    "not firefox <= 117",
+    "not ios_saf <= 16.6",
+    "not safari <= 16.6",
+    "not ios_saf <= 16.6",
+    "not safari <= 16.6"
+  ]
 }

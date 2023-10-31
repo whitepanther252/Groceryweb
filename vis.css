@@ -2,6 +2,8 @@
 body{
     background-image: url(Attachments/kenny-eliason-9m2RZvHS_cU-unsplash.jpg);
     background-size: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .Top{
     top: 13%;
@@ -9,11 +11,9 @@ body{
 }
 .Top2{
     top: 2%;
-    left: -25%;
 }
 .Top3{
     top: 12.5%;
-    left: -25%;
 }
 
 input{
@@ -27,21 +27,37 @@ input{
 }
 
 .RC{
-    color: #000000;
+    margin-top: 170px;
+    margin-left: 45%;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .RC h1{
-    margin-left: 45%;
-    margin-top: 12%;
+    border-radius: 6px;
     font-size: 38px;
+    background-color: black;
+    backdrop-filter: blur(200%);
+    padding: 7px;
+    width: fit-content;
+    opacity: 80%;
 }
 .RC h2{
-    margin-left: 42%;
+    border-radius: 6px;
     font-size: 36px;
+    background-color: black;
+    backdrop-filter: blur(200%);
+    padding: 7px;
+    width: fit-content;
+    opacity: 80%;
 }
 .RC h3{
-    margin-left: 49%;
+    border-radius: 6px;
     font-size: 34px;
+    background-color: black;
+    backdrop-filter: blur(200%);
+    padding: 7px;
+    width: fit-content;
+    opacity: 80%;
 }
 
 .label{
