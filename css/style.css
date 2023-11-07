@@ -629,7 +629,7 @@ section{
   margin: 1rem 0;
   font-size: 1.7rem;
   color: #666;
-  text-transform: capitalize;
+  text-transform: lowercase;
   border: .1rem solid transparent;
   background: var(--bg);
   border-bottom-color: var(--primary-color);
