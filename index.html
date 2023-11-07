@@ -1,170 +1,586 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Login</title>
-        <link rel="stylesheet" type="text/css" href="vis.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
 
-    <Login class="login Top" id="PopUpLogin">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-                <!-- Title -->
-            <h2>LOGIN</h2>
-        
-            <!-- Input Getting -->
-        <form>
-            <label for="UserId">USERNAME </label>
-                <input type="textbox" name="UserId" id="UserId" placeholder="Enter phone or mail"><br/><br/>
-            <label for="Password">PASSWORD </label>
-                <input type="textbox" name="Password" id="Password" placeholder="Enter password"><br/><br/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-            <!-- OR Text -->
-                <div class="or">OR</div>
+    <link rel="stylesheet" href="css/style.css">
 
-            <!-- Social Link To Login -->
-        <div class="socialLogin">
-            <img onclick="popUpSocialSignUpApple()" src="Attachments/Apple Logo .png" width="20px" height="20px">
-            <img onclick="popUpSocialSignUpGoogle()" src="Attachments/Google Logo .png" width="20px" height="20px">
-            <img onclick="popUpSocialSignUpFaceBook()" src="Attachments/Facebook Logo .png" width="20px" height="20px">
+</head>
+<body>
+    
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> Grocery </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#blog">blog</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-basket"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
         </div>
 
-            <!-- User Agrement -->
-        <span class="userAgrement">
-            <input type="checkbox" name="UserAgrement" id="UserAgrement">
-                <label for="UserAgrement">User Agrement Policy</label>
-        </span>
+        <!-- shopping cart -->
+
+        <div class="shopping-cart">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart1.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart2.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$15.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart3.png" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart4.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total: <span> $56.89</span></h3>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <!-- end -->
+
+        <!-- login -->
+
+        <form action="" class="login-form">
+
+            <h3>login form</h3>
+
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <a href="#" class="btn"> login </a>
+
         </form>
 
-    <span>    
-        <!-- Login Button -->
-        <a href="Groceryweb/gro.html"><button>LOGIN</button></a>
-                                    
-    </span>
+    </header>
 
-        <!-- Login Page To SignUp page & Reset Password Page -->
-            <span class="label">
-                <a id="createAccount" onclick="dropDownSignUp()">Create Account</a> <p> / </p> <a onclick="dropDownResetPass()" id="resetPassword">Reset Password</a>
-            </span>
+    <!-- end -->
 
-        </Login>
-        
-            <!-- Script for dropDownLogin -->
+    <!-- home -->
 
-            <script>
+    <section class="home" id="home">
 
-                let PopUpLogin = document.getElementById("PopUpLogin");
-    
-                function dropDownLogin(){
-                    PopUpLogin.classList.toggle("openLogin");
-                }
+        <div class="content">
+            <h3>buy best <span> organic product </span> online </h3>
+            <a href="#" class="btn"> get yours now </a>
+        </div>
 
-            </script>
+    </section>
 
-        <!-- Reset Password -->
-    <Reset class="resetPass Top3" id="PopUpResetPass">
+    <!-- end -->
 
-        <!-- Close Button -->
-            <img onclick="dropDownResetPass()" id="xButtonResetPass" src="Attachments/Close.jpg" width="20px" height="20px">
+    <!-- banner -->
 
-            <!-- Title -->
-        <h2>RESET YOUR</h2>
-        <h4>PASSWORD</h4>
-    
-    <!-- Content Of Reset Password -->
-        <p>
-            The current password for an account on a website, service, or device, and then creating a new one.
-        </p>
+    <section class="banner-container">
 
-        <!-- Input Getting -->
-    <form>
-            <input type="textbox" name="VerificationCode" id="VerificationCode" placeholder="Enter 6 Digit Code">
-    </form>
+        <div class="banner">
+            <img src="images/banner1.png" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>Vegetables</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
 
-    <!-- Verification Code Get Content -->
-        <p id="Varify">Get Varification Code</p> <p id="TimeForVarificationCode">1:00</p>
+        <div class="banner">
+            <img src="images/banner2.png" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>fruits</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
 
-<span>
-    <!-- Reset Button -->
-    <a href="Groceryweb/index.html"><button onclick="ResetAction()">SUBMIT</button></a>
+        <div class="banner">
+            <img src="images/banner3.png" alt="">
+            <div class="content">
+                <span>limited sales</span>
+                <h3>assorted</h3>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
 
-</span>
-
-</Reset>
-    
-        <!-- Script for dropDownRestPassword -->
-
-            <script>
-
-                let PopUpResetPass = document.getElementById("PopUpResetPass");
-    
-                function dropDownResetPass(){
-                    PopUpResetPass.classList.toggle("openResetPass");
-                }
-
-            </script>
+    </section>
 
 
-<!-- SignUp -->
-    <signup class="signUp Top2" id="PopUpSignUp">
+    <!-- end -->
 
-        <!-- Close Button -->
-            <img onclick="dropDownSignUp()" id="xButtonSignUp" src="Attachments/Close.jpg" width="20px" height="20px">
+    <!-- product -->
 
-            <!-- Title -->
-        <h2>CREATE ACCOUNT</h2>
-    
-        <!-- Input Getting -->
-    <form>
-        <label for="UserId">USERNAME </label>
-            <input type="textbox" name="UserId" id="UserId" placeholder="Enter phone or mail"><br/><br/>
-        <label for="Password">PASSWORD </label>
-            <input type="textbox" name="Password" id="Password" placeholder="Least 8 Charecters"><br/><br/>
-        <label for="Password">CONFIRM PASS </label>
-            <input type="textbox" name="CPassword" id="CPassword" placeholder="Re-enter password"><br/><br/>
-    </form>
-    
-            <!-- OR Text -->
-        <div class="or">OR</div>
-    
-        <!-- Social Link To SignUp -->
-    <div class="socialSignUp">
-        <img onclick="popUpSocialSignUpApple()" src="Attachments/Apple Logo .png" width="25px" height="25px">
-        <img onclick="popUpSocialSignUpGoogle()" src="Attachments/Google Logo .png" width="25px" height="25px">
-        <img onclick="popUpSocialSignUpFaceBook()" src="Attachments/Facebook Logo .png" width="25px" height="25px">
-    </div>
+    <section class="product" id="product">
 
-<span>
-    <!-- SignUp Button -->
-        <a href="Groceryweb/index.html"><button onclick="SignUpAction()">SIGN UP</button></a>
-                                
-</span>
+        <h1 class="heading"> our <span>products</span></h1>
 
-    <!-- SignUp Page To Login page -->
-        <span>
-            <a onclick="dropDownSignUp()" id="loginAccount">Already Have Account ?</a>
-        </span>
+        <div class="box-container">
 
-    </signup>
-    
-        <!-- Script for dropDownSignUp -->
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-            <script>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-                let PopUpSignUp = document.getElementById("PopUpSignUp");
-    
-                function dropDownSignUp(){
-                    PopUpSignUp.classList.toggle("openSignUp");
-                }
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-            </script>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-  </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-    <div class="RC">
-        <h1><b>Quality Products. Affordable Prices.</b></h1>
-        <h2>Amazing finds in every visit.</h2>
-        <h3>All your needs we have it here!</h3>
-    </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/product-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>heinz ketchup</h3>
+                    <div class="price">$14.99</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
 
-    </body>
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- about -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about </span> us </h1>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>we make organic food in market</h3>
+                <div class="divider"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam rem cupiditate sequi porro assumenda tenetur rerum modi, pariatur enim quis officiis nesciunt et</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo totam aut voluptatum ipsa dolorum.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="image">
+                <img src="images/about1.png" alt="">
+            </div>
+
+            <div class="image">
+                <img src="images/about2.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- end -->
+
+    <!-- review -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> client's <span>review</span> </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-1.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-2.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-3.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-4.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-5.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide slide">
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut voluptatum sunt mollitia tempora, vitae consectetur.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/review-6.png" alt="">
+                        <div class="user-info">
+                            <h3>john dev</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- blog -->
+
+    <section class="blog" id="blog">
+
+        <h1 class="heading"> our <span> blog</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog1.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                    </div>
+                    <h3>healthy vegetables to try</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates voluptatum magni similique beatae doloribus qui facilis officia.</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                    </div>
+                    <h3>healthy vegetables to try</h3>
+                    <p>When it comes to maintaining a nutritious and well-balanced diet, incorporating a variety of healthy vegetables into your meals is key. Some fantastic options to consider include leafy greens like spinach and kale, which are rich in essential vitamins and minerals. Bell peppers, available in vibrant colors, are not only delicious but also packed with antioxidants. Broccoli is another nutritional powerhouse, known for its high fiber content and cancer-fighting properties. Sweet potatoes are a tasty source of complex carbohydrates and are loaded with vitamins A and C. Finally, don't forget about the versatility of tomatoes, which can be enjoyed fresh in salads, cooked in sauces, or roasted for a burst of flavor. By incorporating these healthy vegetables into your diet, you can boost your overall health and well-being.</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog3.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                    </div>
+                    <h3>healthy vegetables to try</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptates voluptatum magni similique beatae doloribus qui facilis officia.</p>
+                    <a href="#" class="btn"> read more </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> contact <span> now </span> </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact.png" alt="">
+            </div>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="last name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" placeholder="email address">
+                    <input type="number" placeholder="phone">
+                </div>
+
+                <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="order now" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>find us here</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In accusamus praesentium.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+52 2 1478 7412</p>
+                <a href="#" class="link">abcd1234@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>230 points of pines dr <br>
+                colorado springs <br>
+                United States.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span> Vishwa </span> all rights reserved!</div>
+
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
