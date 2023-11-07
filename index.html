@@ -521,20 +521,20 @@
                 <img src="images/contact.png" alt="">
             </div>
 
-            <form action="">
+            <form action="" id="contactForm">
 
                 <div class="inputBox">
-                    <input type="text" placeholder="first name">
-                    <input type="text" placeholder="last name">
+                    <input type="text" id="fname" placeholder="first name">
+                    <input type="text" id="lname" placeholder="last name">
                 </div>
 
                 <div class="inputBox">
-                    <input type="email" placeholder="email address">
-                    <input type="number" placeholder="phone">
+                    <input type="email" id="email" placeholder="email address">
+                    <input type="number" id="phonenum" placeholder="phone">
                 </div>
 
-                <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="order now" class="btn">
+                <textarea placeholder="message" id="msgcon" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit" class="btn">
             </form>
 
         </div>
@@ -570,7 +570,7 @@
                 <h3>localization</h3>
                 <p>230 points of pines dr <br>
                 Gotham City <br>
-                TItan.
+                Titan.
                 </p>
             </div>
 
@@ -580,7 +580,9 @@
 
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="js/mail.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
