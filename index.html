@@ -82,12 +82,13 @@
 
         <!-- login -->
 
-        <form action="" class="login-form">
+        <form action="" class="login-form" id="login">
 
             <h3>login form</h3>
+            <div class="alert1">Login Successful</div>
 
-            <input type="email" placeholder="enter your email" class="box" required>
-            <input type="password" placeholder="enter your password" class="box" required>
+            <input type="email" placeholder="enter your email" id="emaillog" class="box" required>
+            <input type="password" placeholder="enter your password" id="pass" class="box" required>
 
             <div class="remember">
                 <input type="checkbox" name="" id="remember-me">
@@ -453,61 +454,118 @@
 
     <!-- end -->
 
+
     <!-- blog -->
 
-    <section class="blog" id="blog">
+        <section class="blog" id="blog">
 
-        <h1 class="heading"> our <span> blog</span> </h1>
+            <h1 class="heading"> our <span> blog</span> </h1>
 
-        <div class="box-container">
+            <div class="box-container">
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog1.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                <!-- Blog Post 1 -->
+                <div class="box" id="box1">
+                    <div class="image">
+                        <img src="images/blog1.png" alt="">
                     </div>
-                    <h3>healthy vegetables to try</h3>
-                    <p>When it comes to maintaining a nutritious and well-balanced diet, incorporating a variety of healthy vegetables into your meals is key. Some fantastic options to consider include leafy greens like spinach and kale, which are rich in essential vitamins and minerals. Bell peppers, available in vibrant colors, are not only delicious but also packed with antioxidants. Broccoli is another nutritional powerhouse, known for its high fiber content and cancer-fighting properties. Sweet potatoes are a tasty source of complex carbohydrates and are loaded with vitamins A and C. Finally, don't forget about the versatility of tomatoes, which can be enjoyed fresh in salads, cooked in sauces, or roasted for a burst of flavor. By incorporating these healthy vegetables into your diet, you can boost your overall health and well-being.</p>
-                    <a href="#" class="btn"> read more </a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog2.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                    <div class="content1">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                        <h3>healthy vegetables to try</h3>
+                        <p>
+                            When it comes to maintaining a nutritious and well-balanced diet, incorporating a variety of healthy vegetables into your meals is key.
+                            Some fantastic options to consider include leafy greens like <span id="dots1">...</span><span id="more1"> spinach and kale, which are rich in essential vitamins and minerals.
+                            Bell peppers, available in vibrant colors, are not only delicious but also packed with antioxidants.
+                            Broccoli is another nutritional powerhouse, known for its high fiber content and cancer-fighting properties.
+                            Sweet potatoes are a tasty source of complex carbohydrates and are loaded with vitamins A and C.
+                            Finally, don't forget about the versatility of tomatoes, which can be enjoyed fresh in salads, cooked in sauces, or roasted for a burst of flavor.
+                            By incorporating these healthy vegetables into your diet, you can boost your overall health and well-being.</span>
+                        </p>
+                        <button onclick="toggleReadMore('dots1', 'more1', 'myBtn1')" class="btn" id="myBtn1">Read more</button>
                     </div>
-                    <h3>Supremacy of Sushi</h3>
-                    <p>Sushi, the iconic Japanese culinary art form, is a delectable and intriguing dish that has captured the hearts and taste buds of food enthusiasts worldwide. Crafted with the utmost precision and care, sushi is a delicate balance of flavors, textures, and artistry. At its core, it consists of vinegared rice, often paired with fresh fish, vegetables, or other ingredients, all wrapped in nori seaweed or served as bite-sized morsels. The result is a symphony of tastes and visual appeal, ranging from the pure simplicity of sashimi to the intricate rolls of maki. Sushi is not just a meal; it's an experience that combines tradition and innovation, making it a delightful choice for both the adventurous foodie and the discerning palate. Explore the world of sushi at our restaurant, where we take pride in offering an authentic and unforgettable dining experience that celebrates this culinary masterpiece.</p>
-                    <a href="#" class="btn"> read more </a>
                 </div>
-            </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/blog3.png" alt="">
-                </div>
-                <div class="content">
-                    <div class="icons">
-                        <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                <!-- Blog Post 2 -->
+                <div class="box" id="box2">
+                    <div class="image">
+                        <img src="images/blog2.png" alt="">
                     </div>
-                    <h3>Awesomeness of Avocado</h3>
-                    <p>Avocado, often referred to as "nature's butter," is a versatile and nutrient-packed fruit that has taken the culinary world by storm. Known for its creamy texture and rich, buttery flavor, avocados are not only delicious but also incredibly nutritious. Packed with heart-healthy monounsaturated fats, avocados are a smart choice for those looking to maintain a well-balanced diet. They are also a fantastic source of essential vitamins and minerals, such as potassium, vitamin K, and vitamin E. Whether you enjoy them sliced on toast, blended into a smoothie, or as the star ingredient in guacamole, avocados offer a delightful culinary experience while providing numerous health benefits. Incorporate this green gem into your daily meals to enjoy its unique taste and support your overall well-being.</p>
-                    <a href="#" class="btn"> read more </a>
+                    <div class="content2">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                        <h3>Supremacy of Sushi</h3>
+                        <p>
+                            Sushi, the iconic Japanese culinary art form, is a delectable and intriguing dish that has captured the hearts and taste buds of food enthusiasts worldwide.
+                            Crafted with the utmost precision <span id="dots2">...</span><span id="more2"> and care, sushi is a delicate balance of flavors, textures, and artistry.
+                            At its core, it consists of vinegared rice, often paired with fresh fish, vegetables, or other ingredients, all wrapped in nori seaweed or served as bite-sized morsels.
+                            The result is a symphony of tastes and visual appeal, ranging from the pure simplicity of sashimi to the intricate rolls of maki.
+                            Sushi is not just a meal; it's an experience that combines tradition and innovation, making it a delightful choice for both the adventurous foodie and the discerning palate.
+                            Explore the world of sushi at our restaurant, where we take pride in offering an authentic and unforgettable dining experience that celebrates this culinary masterpiece.</span>
+                        </p>
+                        <button onclick="toggleReadMore('dots2', 'more2', 'myBtn2')" class="btn" id="myBtn2">Read more</button>
+                    </div>
                 </div>
+
+                <!-- Blog Post 3 -->
+                <div class="box" id="box3">
+                    <div class="image">
+                        <img src="images/blog3.png" alt="">
+                    </div>
+                    <div class="content3">
+                        <div class="icons">
+                            <a href="#"> <i class="fas fa-user"></i> by admin </a>
+                        </div>
+                        <h3>Awesomeness of Avocado</h3>
+                        <p>
+                            Avocado, often referred to as "nature's butter," is a versatile and nutrient-packed fruit that has taken the culinary world by storm.
+                            Known for its creamy texture and rich, buttery flavor, <span id="dots3">...</span><span id="more3"> avocados are not only delicious but also incredibly nutritious.
+                            Packed with heart-healthy monounsaturated fats, avocados are a smart choice for those looking to maintain a well-balanced diet.
+                            They are also a fantastic source of essential vitamins and minerals, such as potassium, vitamin K, and vitamin E.
+                            Whether you enjoy them sliced on toast, blended into a smoothie, or as the star ingredient in guacamole, avocados offer a delightful culinary experience while providing numerous health benefits.
+                            Incorporate this green gem into your daily meals to enjoy its unique taste and support your overall well-being.</span>
+                        </p>
+                        <button onclick="toggleReadMore('dots3', 'more3', 'myBtn3')" class="btn" id="myBtn3">Read More</button>
+                    </div>
+                </div>
+
             </div>
+   
+            <!-- JavaScript for Read More/Less functionality -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Call the function for each blog post with the initial state
+                    toggleReadMore('dots1', 'more1', 'myBtn1', 'box1');
+                    toggleReadMore('dots2', 'more2', 'myBtn2', 'box2');
+                    toggleReadMore('dots3', 'more3', 'myBtn3', 'box3');
+                });
 
-        </div>
+                function toggleReadMore(dotsId, moreId, btnId, boxId) {
+                    var dots = document.getElementById(dotsId);
+                    var moreText = document.getElementById(moreId);
+                    var btnText = document.getElementById(btnId);
+                    var box = document.getElementById(boxId);
 
-    </section>
+                    if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read less";
+                        moreText.style.display = "inline"; 
+                        box.style.height = "54rem";
+                    } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read more";
+                        moreText.style.display = "none";
+                        box.style.height = "auto";
+                    }
+                }
+            </script>
+            
+
+        </section>
 
     <!-- end -->
+
 
     <!-- contact -->
 
@@ -584,6 +642,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="js/mail.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

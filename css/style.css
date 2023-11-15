@@ -252,6 +252,16 @@ section{
   text-align: center;
   width: 100%;
 }
+.alert1{
+  width: 100%;
+  background: rgb(0, 255, 106);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
 
 /* end */
 
@@ -532,6 +542,11 @@ section{
 
 /* blog */
 
+.box {
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
 .blog .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -549,7 +564,7 @@ section{
 }
 
 .blog .box-container .box .image img{
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -557,34 +572,47 @@ section{
 .blog .box-container .box:hover .image img{
   transform: scale(1.1);
 }
-
-.blog .box-container .box .content{
+.blog .box-container .box .content1,
+.blog .box-container .box .content2,
+.blog .box-container .box .content3 {
   padding: 2rem;
 }
 
-.blog .box-container .box .content .icons{
+.blog .box-container .box .content1 .icons,
+.blog .box-container .box .content2 .icons,
+.blog .box-container .box .content3 .icons {
   margin-bottom: 1rem;
 }
 
-.blog .box-container .box .content .icons a{
+.blog .box-container .box .content1 .icons a,
+.blog .box-container .box .content2 .icons a,
+.blog .box-container .box .content3 .icons a {
   font-size: 1.4rem;
   color: var(--primary-color);
 }
 
-.blog .box-container .box .content .icons a:hover{
+.blog .box-container .box .content1 .icons a:hover,
+.blog .box-container .box .content2 .icons a:hover,
+.blog .box-container .box .content3 .icons a:hover {
   color: var(--secondary);
 }
 
-.blog .box-container .box .content .icons a i{
-  padding-right: .5rem;
+.blog .box-container .box .content1 .icons a i,
+.blog .box-container .box .content2 .icons a i,
+.blog .box-container .box .content3 .icons a i {
+  padding-right: 0.5rem;
 }
 
-.blog .box-container .box .content h3{
+.blog .box-container .box .content1 h3,
+.blog .box-container .box .content2 h3,
+.blog .box-container .box .content3 h3 {
   font-size: 2.5rem;
   color: var(--black);
 }
 
-.blog .box-container .box .content p{
+.blog .box-container .box .content1 p,
+.blog .box-container .box .content2 p,
+.blog .box-container .box .content3 p {
   font-size: 1.5rem;
   color: var(--black);
   line-height: 2;
@@ -694,7 +722,7 @@ section{
   margin-top: 1rem;
 }
 
-.footer .box-container .box .share a{
+.footer .box-container .box .share .a{
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4.5rem;
